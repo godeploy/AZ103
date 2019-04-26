@@ -101,9 +101,6 @@
                   "apiVersion": "2015-08-01",
                   "name": "web",
                   "type": "sourcecontrols",
-                  "dependsOn": [
-                    "[resourceId('Microsoft.Web/Sites', parameters('sites_yournameappeastus_name'))]"
-                  ],
                   "properties": {
                     "RepoUrl": "https://github.com/GoDeploy/TestSite.git",
                     "branch": "master",
@@ -150,10 +147,7 @@
                 {
                   "apiVersion": "2015-08-01",
                   "name": "web",
-                  "type": "sourcecontrols",
-                  "dependsOn": [
-                    "[resourceId('Microsoft.Web/Sites', parameters('sites_yournameappeastus2_name'))]"
-                  ],
+                  "type": "sourcecontrols",                 
                   "properties": {
                     "RepoUrl": "https://github.com/GoDeploy/TestSite.git",
                     "branch": "master",
