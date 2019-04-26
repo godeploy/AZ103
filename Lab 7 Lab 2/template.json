@@ -230,8 +230,9 @@
                         "name": "[concat(parameters('virtualMachines_myVM_name'), '_OsDisk_1_7faac09c892b41b1818d11d52b8971c8')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",  
-                        "managedDisk": {
-                            "storageAccountType": "Premium_LRS" 
+                         "managedDisk": {
+                            "storageAccountType": "Premium_LRS",
+                           
                         },                    
                         "diskSizeGB": 127
                     },
