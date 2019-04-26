@@ -68,9 +68,6 @@
             "apiVersion": "2016-08-01",
             "name": "[parameters('sites_yournameappeastus_name')]",
             "location": "East US",
-            "dependsOn": [
-                "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_myAppServicePlan_name'))]"
-            ],
             "kind": "app",
             "properties": {
                 "enabled": true,
@@ -115,9 +112,6 @@
             "apiVersion": "2016-08-01",
             "name": "[parameters('sites_yournameappeastus2_name')]",
             "location": "East US 2",
-            "dependsOn": [
-                "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_myAppServicePlanEastUs2_name'))]"
-            ],
             "kind": "app",
             "properties": {
                 "enabled": true,
