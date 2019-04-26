@@ -229,11 +229,10 @@
                         "osType": "Windows",
                         "name": "[concat(parameters('virtualMachines_myVM_name'), '_OsDisk_1_7faac09c892b41b1818d11d52b8971c8')]",
                         "createOption": "FromImage",
-                        "caching": "ReadWrite",
+                        "caching": "ReadWrite",  
                         "managedDisk": {
-                            "storageAccountType": "Premium_LRS",
-                            "id": "[resourceId('Microsoft.Compute/disks', concat(parameters('virtualMachines_myVM_name'), '_OsDisk_1_7faac09c892b41b1818d11d52b8971c8'))]"
-                        },
+                            "storageAccountType": "Premium_LRS" 
+                        },                    
                         "diskSizeGB": 127
                     },
                     "dataDisks": []
