@@ -241,6 +241,7 @@
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_myVM_name')]",
                     "adminUsername": "azureadmin",
+                    "adminPassword": "Azure123456!",
                     "windowsConfiguration": {
                         "provisionVMAgent": true,
                         "enableAutomaticUpdates": true
