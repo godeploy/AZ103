@@ -75,14 +75,14 @@
     },
     "location": {
       "type": "string",
-      "defaultValue": "East US",
+      "defaultValue": "eastUS",
       "metadata": {
         "description": "Location for all resources."
       }
     },
     "location2": {
         "type": "string",
-        "defaultValue": "East US 2",
+        "defaultValue": "eastus2",
         "metadata": {
           "description": "Location for all resources."
         }
