@@ -82,7 +82,7 @@
     },
     "location2": {
         "type": "string",
-        "defaultValue": "eastus2",
+        "defaultValue": "southeastasia",
         "metadata": {
           "description": "Location for all resources."
         }
