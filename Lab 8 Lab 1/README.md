@@ -1,8 +1,12 @@
 # Deployment of a Windows VM with SSMS
 
-This template allows you to deploy a simple Windows VM which will them run a custom script extention to install SSMS pulled from the Microsoft download location
+This template allows you to deploy 3 VMs called myVM1 myVM2 myVM3, they are linked to a custom VM extention that will deploy IIS and a test page to each vm
+
+The vms are all attached to the same vNET
+
+This is in preperation for the load balancing lab
 
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fkramit%2FAZ103-Notes%2Fmaster%2Ftemplates%2Fvmcustomscript%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgodeploy%2FAZ103%2Fmaster%2FLab%208%20Lab%201%2Fazuredeploy.json" target="_blank">
     <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png"/>
 </a>
