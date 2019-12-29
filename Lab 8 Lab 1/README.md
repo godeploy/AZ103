@@ -1,4 +1,4 @@
-# Deployment of a Windows VM with SSMS
+# Deployment of 3 Windows VMs 1vNET
 
 This template allows you to deploy 3 VMs called myVM1 myVM2 myVM3, they are linked to a custom VM extention that will deploy IIS and a test page to each vm
 
