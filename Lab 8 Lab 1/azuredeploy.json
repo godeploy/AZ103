@@ -62,6 +62,9 @@
     "publicIPAddressName1": "myPublicIP1",
     "publicIPAddressName2": "myPublicIP2",
     "publicIPAddressName3": "myPublicIP3",
+    "dnsLabelPrefix1": "[concat(toLower(parameters('dnsLabelPrefix')) , '1')]",
+    "dnsLabelPrefix2": "[concat(toLower(parameters('dnsLabelPrefix')) , '2')]",
+    "dnsLabelPrefix3": "[concat(toLower(parameters('dnsLabelPrefix')) , '3')]",
     "vmName1": "myVM1",
     "vmName2": "myVM2",
     "vmName3": "myVM3",
@@ -89,7 +92,7 @@
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
         "dnsSettings": {
-          "domainNameLabel": "[parameters('dnsLabelPrefix')]"
+          "domainNameLabel": "[variables('dnsLabelPrefix1')]"
         }
       }
     },
@@ -101,7 +104,7 @@
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
         "dnsSettings": {
-          "domainNameLabel": "[parameters('dnsLabelPrefix')]"
+          "domainNameLabel": "[variables('dnsLabelPrefix2')]"
         }
       }
     },
@@ -113,7 +116,7 @@
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
         "dnsSettings": {
-          "domainNameLabel": "[parameters('dnsLabelPrefix')]"
+          "domainNameLabel": "[variables('dnsLabelPrefix3')]"
         }
       }
     },
