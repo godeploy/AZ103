@@ -492,7 +492,7 @@
 {
   "type": "Microsoft.Compute/availabilitySets",
   "name": "[variables('availabilitySetName')]",
-  "apiVersion": "2019–03–01",
+  "apiVersion": "2018–06–01",
   "location": "[parameters('location')]",
   "properties": {
   "platformFaultDomainCount": "3",
