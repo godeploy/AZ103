@@ -499,8 +499,7 @@
         "platformUpdateDomainCount": "20"
       },
        "sku": {
-    "name": "aligned",
-    "capacity": "3"
+    "name": "Aligned"
   }
 }
   ],
