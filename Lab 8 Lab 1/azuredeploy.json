@@ -70,7 +70,8 @@
     "vmName3": "myVM3",
     "virtualNetworkName": "MyVNET",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-    "networkSecurityGroupName": "default-NSG"
+    "networkSecurityGroupName": "default-NSG",
+    "availabilitySetName": "availabilitySet1"
   },
   "resources": [
     {
@@ -310,8 +311,12 @@
             "enabled": true,
             "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))).primaryEndpoints.blob]"
           }
-        }
+        },
+        "availabilitySet": {
+			"id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+		}
       }
+      
     },
     {
     "apiVersion": "2018-06-01",
@@ -382,7 +387,10 @@
             "enabled": true,
             "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))).primaryEndpoints.blob]"
           }
-        }
+        },
+      "availabilitySet": {
+			"id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+		}
       }
     },
     {
@@ -454,7 +462,10 @@
             "enabled": true,
             "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))).primaryEndpoints.blob]"
           }
-        }
+        },
+           "availabilitySet": {
+			"id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+		}
       }
     },
     {
@@ -477,6 +488,19 @@
             "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File customscript.ps1"
         }
     }
+},
+{
+  "type": "Microsoft.Compute/availabilitySets",
+  "name": "[variables('availabilitySetName')]",
+  "apiVersion": "2019–03–01",
+  "location": "[parameters('location')]",
+  "properties": {
+  "platformFaultDomainCount": "3",
+  "platformUpdateDomainCount": "5"
+  },
+  "sku": {
+   "name": "Aligned"
+  }
 }
   ],
   "outputs": {}
