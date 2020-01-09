@@ -492,15 +492,15 @@
 {
       "type": "Microsoft.Compute/availabilitySets",
       "name": "availabilitySet1",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2018-10-01",
       "location": "[parameters('location')]",
       "properties": {
         "platformFaultDomainCount": 3,
         "platformUpdateDomainCount": "20"
       },
        "sku": {
-    "name": "Aligned",
-    "tier": "Standard",
+    "name": "aligned",
+    "tier": "standard",
     "capacity": "3"
   }
 }
