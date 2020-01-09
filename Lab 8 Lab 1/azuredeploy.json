@@ -500,7 +500,6 @@
       },
        "sku": {
     "name": "aligned",
-    "tier": "standard",
     "capacity": "3"
   }
 }
