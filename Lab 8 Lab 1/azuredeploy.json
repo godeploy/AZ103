@@ -490,14 +490,14 @@
     }
 },
 {
-  "type": "Microsoft.Compute/availabilitySets",
-  "name": "[variables('availabilitySetName')]",
-  "apiVersion": "2018–10–01",
-  "location": "[parameters('location')]",
-  "properties": {
-  "platformFaultDomainCount": "3",
-  "platformUpdateDomainCount": "5"
-  }
+      "type": "Microsoft.Compute/availabilitySets",
+      "name": "availabilitySet1",
+      "apiVersion": "2015-06-15",
+      "location": "[parameters('location')]",
+      "properties": {
+        "platformFaultDomainCount": 3,
+        "platformUpdateDomainCount": "20"
+      }
 }
   ],
   "outputs": {}
