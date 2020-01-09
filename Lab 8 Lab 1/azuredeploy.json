@@ -497,7 +497,12 @@
       "properties": {
         "platformFaultDomainCount": 3,
         "platformUpdateDomainCount": "20"
-      }
+      },
+       "sku": {
+    "name": "Aligned",
+    "tier": "Standard",
+    "capacity": "3"
+  }
 }
   ],
   "outputs": {}
