@@ -495,7 +495,7 @@
       "apiVersion": "2018-10-01",
       "location": "[parameters('location')]",
       "properties": {
-        "platformFaultDomainCount": 3,
+        "platformFaultDomainCount": 2,
         "platformUpdateDomainCount": "20"
       },
        "sku": {
